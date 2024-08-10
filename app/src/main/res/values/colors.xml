@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="div_colour">#EBB5FD</color>
+    <color name="colorPrimary">#C7B3EA</color>
+    <color name="colorPrimaryDark">#9563EF</color>
+    <color name="colorAccent">#F67EA3</color>
+    <color name="shadow">#8d8d8d</color>
+    <color name="socialEventColor">#E890AE</color>
+    <color name="workEventColor">#A5D3F8</color>
+    <color name="personalEventColor">#A5ECA8</color>
+
+</resources>

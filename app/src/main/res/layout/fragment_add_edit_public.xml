@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:TagsEditText="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddEditPublicFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_weight="1.3"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:layout_height="0dp">
+            <com.google.android.material.button.MaterialButton
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:text="Add Banner"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDark"
+                app:icon="@drawable/add_banner"
+                android:elevation="@dimen/cardview_default_elevation"
+                android:id="@+id/bannerButton"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/example_banner"
+                android:id="@+id/bannerImage" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="15dp">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/deleteEventButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="85dp"
+            android:background="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:contentDescription="Delete"
+            android:elevation="10dp"
+            android:visibility="gone"
+            android:src="@drawable/bin"
+            app:borderWidth="0dp" />
+        <androidx.core.widget.NestedScrollView
+            android:fillViewport="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:id="@+id/eventForm">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_title"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/titleTextLayout"
+                    android:backgroundTint="@color/white"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/titleEditText"
+                        android:layout_width="match_parent"
+                        android:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:hint="Title"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location_symbol"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:padding="5dp"
+                    android:id="@+id/locationTextLayout"
+                    android:layout_weight="9"
+                    android:layout_width="0dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/locationEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Location"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_description"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:padding="5dp"
+                    android:layout_weight="9"
+                    android:id="@+id/descriptionTextLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:text="Description" >
+                    <EditText
+                        android:id="@+id/descriptionEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Description"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/link"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:padding="5dp"
+                    android:layout_weight="9"
+                    android:id="@+id/linksTextLayout"
+                    android:layout_width="0dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/linksEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Link"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pound"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:padding="5dp"
+                        android:labelFor="@id/eventGenreSpinner"
+                        android:id="@+id/genreTextLayout"
+                        android:layout_width="0dp"
+                        android:layout_weight="9"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/priceInput"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:hint="Price"
+                            android:inputType="numberDecimal"
+                            android:maxLength="10"/>
+
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tag"/>
+
+                    <mabbas007.tagsedittext.TagsEditText
+                        android:id="@+id/tagsEditText"
+                        android:gravity="center"
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter tags for searching"
+                        TagsEditText:allowSpaceInTag="true"
+                        TagsEditText:tagsCloseImageRight="@drawable/tag_close"
+                        TagsEditText:tagsBackground="@drawable/square"
+                        TagsEditText:tagsCloseImageLeft="@drawable/dot"
+                        TagsEditText:tagsTextColor="@color/black"
+                        TagsEditText:tagsTextSize="@dimen/defaultTagsTextSize"
+                        TagsEditText:tagsCloseImagePadding="@dimen/defaultTagsCloseImagePadding"/>
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:padding="5dp"
+                        android:labelFor="@id/eventGenreSpinner"
+                        android:id="@+id/genreTextView"
+                        android:gravity="center"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_toStartOf="@id/eventTypeTextView"
+                        android:layout_width="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_height="wrap_content"
+                        android:text="Genre:"/>
+
+                    <Spinner
+                        android:layout_below="@id/genreTextView"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:id="@+id/eventGenreSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/event_types" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:padding="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/eventGenreSpinner"
+                        android:labelFor="@id/eventTypeSpinner"
+                        android:id="@+id/eventTypeTextView"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_height="wrap_content"
+                        android:text="Event Type"/>
+
+                    <Spinner
+                        android:layout_below="@id/eventTypeTextView"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@id/eventGenreSpinner"
+                        android:layout_alignStart="@id/eventTypeSpinner"
+                        android:id="@+id/eventTypeSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/event_types" />
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/createDatePicker"
+                    app:icon="@drawable/ic_add"
+                    android:text="Select Date"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateSelectedTextView"
+                    android:padding="5dp"
+                    style="@style/MaterialAlertDialog.Material3.Body.Text"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="* required"/>
+
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Start Time -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/startTimeTextView"
+                        android:layout_marginEnd="50dp"
+                        android:text="Start Time:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:id="@+id/endTimeTextView"
+                        android:text="End Time:"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <NumberPicker
+                        android:id="@+id/startHourPicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
+
+                    <NumberPicker
+                        android:id="@+id/startMinutePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginEnd="20dp"/>
+
+                    <NumberPicker
+                        android:id="@+id/endHourPicker"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
+
+                    <NumberPicker
+                        android:id="@+id/endMinutePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/event_example_1"
+                        android:id="@+id/uploadImage1" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/uploadImage2"
+                        android:visibility="gone"
+                        android:src="@drawable/event_example_1"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/uploadImage3"
+                        android:src="@drawable/event_example_1"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/uploadImage4"
+                        android:visibility="gone"
+                        android:src="@drawable/event_example_1"/>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/submitEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:contentDescription="Submit"
+            android:elevation="10dp"
+            android:src="@drawable/ic_add"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:borderWidth="0dp" />
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

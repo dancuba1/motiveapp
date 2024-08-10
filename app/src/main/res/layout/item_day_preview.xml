@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="30dp"
+    android:layout_height="20dp"
+    android:id="@+id/eventBackgroundCard"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="2dp">
+
+
+
+
+    <!--
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:elevation="8dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/startTimeTextView"
+                android:text="0:00"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:textSize="12sp"/>
+
+
+            <TextView
+                android:id="@+id/endTimeTextView"
+                android:text="2:00"
+                android:textColor="@color/white"
+                android:layout_below="@id/startTimeTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+            -->
+
+</com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+

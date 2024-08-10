@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Calendar.DayViewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLayout"
+        android:orientation="vertical">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/daysOfWeekLayout"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:gravity="center"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mondayCardView"
+                    app:cardCornerRadius="5dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    >
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mondayTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        app:cardElevation="10dp"
+
+                        android:text="M">
+
+                    </com.google.android.material.textview.MaterialTextView>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/tuesdayCardView"
+                    android:layout_gravity="center"
+                    >
+                    <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuesdayTextView"
+                    android:layout_gravity="center"
+                    android:text="T"
+                    android:layout_weight="1"/>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+
+                    android:id="@+id/wednesdayCardView"
+                    android:layout_gravity="center"
+                    >
+                    <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wednesdayTextView"
+                    android:layout_gravity="center"
+                    android:text="W"
+                    android:layout_weight="1"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/thursdayCardView"
+
+                    >
+                    <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thursdayTextView"
+                    android:layout_gravity="center"
+                    android:text="T"
+                    android:layout_weight="1"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/fridayCardView"
+                    >
+                    <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fridayTextView"
+                    android:layout_gravity="center"
+                    android:text="F"
+                    android:layout_weight="1"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp"
+
+                    android:layout_margin="5dp"
+                    android:id="@+id/saturdayCardView"
+                    android:layout_gravity="center"
+                    >
+                    <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saturdayTextView"
+                    android:layout_gravity="center"
+                    android:text="S"
+                    android:layout_weight="1"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:id="@+id/sundayCardView"
+                    app:cardCornerRadius="5dp"
+                    android:layout_gravity="center"
+                    >
+                    <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sundayTextView"
+                    android:layout_gravity="center"
+                    android:text="S"
+                    android:layout_weight="1"/>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="selected date"
+            android:id="@+id/selectedDateTextView"/>
+
+        <!-- fragment_day_view.xml -->
+        <androidx.recyclerview.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/eventsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        android:id="@+id/addEventButton"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="bottom|end"
+        android:elevation="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_add"
+        android:contentDescription="Submit">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+
+
+
+</FrameLayout>

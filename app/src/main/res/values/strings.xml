@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Motive</string>
+    <string name="leftMonth"><![CDATA[<]]></string>
+    <string name="rightMonth"><![CDATA[>]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="event_description_example">\"A night filled with fun times, late nights and many drinks. Available for all 18s+, with Drum and Bass, Jungle and Techno\"</string>
+    <string name="login">Login</string>
+    <string name="description">Description: -------------------------------------------</string>
+    <string name="no_events_found">No events found</string>
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+
+</resources>

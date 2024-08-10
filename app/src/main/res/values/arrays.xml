@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="event_types">
+        <item>Social</item>
+        <item>Work</item>
+        <item>Personal</item>
+    </string-array>
+
+    <string-array name="event_genres">
+        <item>Live Music</item>
+        <item>Bar/Pub</item>
+        <item>Books/Poetry</item>
+        <item>Education</item>
+        <item>Club Night</item>
+        <item>Comedy</item>
+        <item>Conference</item>
+        <item>Class</item>
+        <item>Exhibition</item>
+        <item>Festival</item>
+        <item>Food/Drink</item>
+        <item>Fundraising/Charity</item>
+        <item>Health/Fitness</item>
+        <item>Sport</item>
+        <item>Theatre/Drama</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="event_genres_any">
+        <item>Any</item>
+        <item>Live Music</item>
+        <item><![CDATA[Bar & Pub]]></item>
+        <item><![CDATA[Books & Poetry]]></item>
+        <item>Education</item>
+        <item>Club Night</item>
+        <item>Comedy</item>
+        <item>Conference</item>
+        <item>Class</item>
+        <item>Exhibition</item>
+        <item>Festival</item>
+        <item><![CDATA[Food & Drink]]></item>
+        <item><![CDATA[Fundraising & Charity]]></item>
+        <item><![CDATA[Health & Fitness]]></item>
+        <item>Sport</item>
+        <item><![CDATA[Theatre & Drama]]></item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="alert_times">
+        <item>None</item>
+        <item>5 minutes before</item>
+        <item>15 minutes before</item>
+        <item>30 minutes before</item>
+        <item>1 hour before</item>
+        <item>2 hours before</item>
+    </string-array>
+
+</resources>

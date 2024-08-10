@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PublicEventViewFragment">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_weight="1.3"
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_height="0dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        android:id="@+id/bannerHeading">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintDimensionRatio="16:9"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/example_banner"
+                android:id="@+id/bannerImage"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.6">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:id="@+id/headingTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text="Very long text that will not fit in two lines and should end with ellipsis..."
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/dateTextView"
+                    style="@style/TextAppearance.Material3.ActionBar.Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="65dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="15th December 2024"
+                    android:textColor="@color/black" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:id="@+id/priceTextView"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:text="£30.00"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_weight="1.7"
+        android:layout_width="match_parent"
+        android:id="@+id/infoScrollView"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventInfoLayout"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:ellipsize="end"
+                    android:maxLines="10"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:textSize="18sp"
+                    android:id="@+id/descriptionTextView"
+                    android:layout_height="wrap_content"
+                    android:text="@string/event_description_example"/>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:padding="3dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/circle_background"
+                        android:id="@+id/profilePic"
+                        android:layout_gravity="center"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:elevation="5dp"
+                        app:icon="@drawable/ic_add"
+                        app:elevation="5dp"
+                        android:text="Attend"
+                        app:iconGravity="textStart"
+                        android:padding="5dp"
+                        android:textSize="11sp"
+                        android:id="@+id/attendButton"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/descriptionImagesLayout"
+                android:layout_weight="1.1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5"
+                android:layout_height="0dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    app:cardElevation="10dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="top"
+                            android:layout_width="0dp"
+                            android:paddingEnd="5dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:padding="5dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/share_icon"
+                                android:id="@+id/shareButton"
+                                android:layout_gravity="center"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="#1251CD"
+                                android:layout_marginBottom="10dp"
+                                android:text="www.lboro.ac.uk"
+                                android:id="@+id/linksTextView"/>
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/locationImageView"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/location_symbol"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:id="@+id/locationTextView"
+                                android:text="Example Street LE11 3BJ"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <com.google.android.material.textview.MaterialTextView
+                                android:padding="5dp"
+                                android:id="@+id/whosGoingTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:text="Who's going?"/>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/attendeesRecyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/ellipsisIndicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="..."
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <GridLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:columnCount="2"
+                    android:rowCount="2"
+                    android:id="@+id/pictureCollageLayout"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false">
+
+                    <!-- Image 1 -->
+                    <ImageView
+                        android:id="@+id/thumbnailImageView1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:src="@drawable/event_example_1"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp" />
+
+                    <!-- Image 2 -->
+                    <ImageView
+                        android:id="@+id/thumbnailImageView2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:src="@drawable/event_example_2"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp" />
+
+                    <!-- Image 3 -->
+                    <ImageView
+                        android:id="@+id/thumbnailImageView3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:src="@drawable/event_example_1"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp" />
+
+                    <!-- Image 4 -->
+                    <ImageView
+                        android:id="@+id/thumbnailImageView4"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:src="@drawable/event_example_2"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp" />
+                </GridLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/calendarCardView"
+        android:layout_weight="0.8">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/yourCalendarTextView"
+                android:text="Your Calendar:"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/yourCalendarPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/yourCalendarTextView"/>
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+</LinearLayout>

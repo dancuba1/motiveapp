@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Circular background -->
+    <item>
+        <shape android:shape="oval">
+            <stroke
+                android:width="1dp"
+                android:color="#888888" />
+
+            <gradient
+                android:type="linear"
+                android:angle="90"
+                android:startColor="#6C6969"
+                android:endColor="#E4E4E4"
+                android:gradientRadius="50%" />
+        </shape>
+
+    </item>
+
+
+    <!-- Overlay your drawable within the circular shape -->
+    <item
+        android:drawable="@drawable/profile_pic"
+        android:gravity="center"
+        />
+    <item
+        android:drawable="@drawable/add_symbol_white"
+        android:height="30dp"
+        android:width="30dp"
+        android:bottom="@dimen/cardview_compat_inset_shadow"
+        android:gravity="end">
+    </item>
+</layer-list>
+
