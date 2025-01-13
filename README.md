@@ -1,6 +1,6 @@
 # :calendar:MOTIVE:thinking:
 ## What is Motive?
-### Motive is an Event Sharing and Organisation Planning Native Android Application which allows users to create events, share said events with their friends, and add them to their in-app calendar, where they can additionally add their own private events.</br>
+### Motive is an Event Sharing and Organisation Planning Native Android Application which allows users to create events, share events with their friends/family, and add them to their in-app calendar, where they can additionally add their own private events.</br>
 ---
 ### Home Screen  
 
@@ -24,7 +24,7 @@ Each day is clickable, directing the user to the corresponding private events pa
 <img src="media/image47.png" alt="Day View Page" width="200" height="400"> <img src="media/image48.png" alt="Create Private Event Page" width="200" height="400"> <img src="media/image50.png" alt="Create Private Event Page (Filled)" width="200" height="400"> <img src="media/image46.png" alt="Delete Private Event" width="200" height="400"> 
 
 Users can create private events directly, which are saved locally on their device and do not require any internet connection to access.  
-Users can create custom events, and they are color-coordinated to the event type (e.g., Work - Blue).  
+Users can create custom events, and they are colour-coordinated to the event type (e.g., Work - Blue).  
 Public events are also shown here and can be deleted, which will remove your attendance from said event.  
 
 ---
@@ -36,12 +36,12 @@ Public Events can be accessed through clicking on them in the home page, or on a
 <img src="media/image24.png" alt="Public Event Page" width="200" height="400"> <img src="media/image23.png" alt="Public Event Page (Add to calendar/save)" width="200" height="400"> </br>
 
 The Public Event page offers an image, title, location, price and external link for the event. The uploader's profile picture is visible which directs to their profile page. </br>
-Users can save an event, publically and/or privately, this will determine whether other users that follow them can view their attendance.
+Users can save an event, publicly and/or privately, this will determine whether other users that follow them can view their attendance.
 
 ---
 #### :point_right:	Calendar Preview
 
-At the bottom of the page is the calendar preview, which displays the calendar of the user, from 2 days prior to the event to 2 days after (Horizontally scrollable).  
+At the bottom of the page is the calendar preview, which displays the calendar of the user, from 2 days prior to the event to 2 days after (horizontally scrollable).  
 
 ---
 
@@ -52,7 +52,7 @@ Additionally, users can view whether the other users that they follow are attend
 
 ***
 
-Both calendar preview and attendance view offer the user the ability to make an informed decision of their attendance, and whether they wish to publically display that.  
+Both calendar preview and attendance view offer the user the ability to make an informed decision of their attendance, and whether they wish to publicly display that.  
 
 ---
 
@@ -61,7 +61,7 @@ Both calendar preview and attendance view offer the user the ability to make an 
 <img src="media/image36.png" alt="Search Page" width="200" height="400"><img src="media/image43.png" alt="Search Page (Advanced Search)" width="200" height="400">  <img src="media/image37.png" alt="Search Page (text tag search example)" width="200" height="400">  <img src="media/image35.png" alt="Search Page (standard search example)" width="200" height="400">  
 
 The Search page grants 2 functions:
-- **Text Search**: Users search across all public events, using Algolia Search API, which allows for searching across all attributes of event (e.g. tag, location, etc).  
+- **Text Search**: Users search across all public events, using Algolia Search API, which allows for searching across all attributes of event (e.g. tag, location, etc.).  
 - **Advanced Search**: Search parameters can be set such as price, date, tags and event genre.  
 
 ---
@@ -77,7 +77,7 @@ Profiles can either be accessed via the profile tab (the user's own profile) or 
 
 <img src="media/image57.png" alt="Home Page" width="200" height="400"> <img src="media/image58.png" alt="Profile Page (Own)" width="200" height="400">
 
-Users can view their event's that they have created or the events they have set to publically attend. Additionally clicking on their followers or following will display the correspinding users.
+Users can view their event's that they have created or the events they have set to publicly attend. Additionally clicking on their followers or following will display the corresponding users.
 
 ---
 
@@ -100,6 +100,6 @@ Lastly, users can click add event at the bottom of the screen to create their ow
 
 <img src="media/image52.png" alt="Create Public Event Page (filled 1)" width="200" height="400"><img src="media/image54.png" alt="Create Public Event Page (filled 2)" width="200" height="400">
 
-Users create a public event, including a banner image, title, location, description, link, price, tags, date, time, genre and type (for calendar colour correspondance).
+Users create a public event, including a banner image, title, location, description, link, price, tags, date, time, genre and type (for calendar colour correspondence).
 
 ---
