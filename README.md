@@ -1,4 +1,4 @@
-# MOTIVE
+# :calendar:MOTIVE:thinking:
 ## What is Motive?
 ### Motive is an Event Sharing and Organisation Planning Native Android Application which allows users to create events, share said events with their friends, and add them to their in-app calendar, where they can additionally add their own private events.</br>
 ---
@@ -85,11 +85,11 @@ Users can view their event's that they have created or the events they have set 
 
 <img src="media/image56.png" alt="Profile Page (Other)" width="200" height="400">
 
-Users can follow other users on this page and view all their public events  
+Users can follow other users on this page and view all their public events.  
 
 ---
 
-Lastly, users can click add event at the bottom of the screen to create their own public event  
+Lastly, users can click add event at the bottom of the screen to create their own public event.  
 
 ---
 
@@ -100,6 +100,6 @@ Lastly, users can click add event at the bottom of the screen to create their ow
 
 <img src="media/image52.png" alt="Create Public Event Page (filled 1)" width="200" height="400"><img src="media/image54.png" alt="Create Public Event Page (filled 2)" width="200" height="400">
 
-Users create a public event, including title, location, description, link, price, tags, date, time, genre and type (for calendar colour correspondance).
+Users create a public event, including a banner image, title, location, description, link, price, tags, date, time, genre and type (for calendar colour correspondance).
 
 ---
